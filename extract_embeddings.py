@@ -54,7 +54,7 @@ def extract_embeddings(asd_ds, trill, cola, trillsson5):
 
         t19_reps[filename] = trill(audio, sample_rate=16000)['layer19'].numpy()
         ts5_full_reps[filename] = trillsson5(audio.numpy().reshape((1, -1)))['embedding'].numpy()
-        cola_reps[filename] = cola(audio.numpy())
+        cola_reps[filename] = cola(audio.numpy()).numpy()
 
         # Compute number of 960ms segments in current audio example
         segment_size = int(sample_rate * 0.96)

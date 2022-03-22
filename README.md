@@ -11,7 +11,7 @@ to your project, see 'main/simple_example.py' to learn how to do so. It's a fair
 
 Files in this repository:
 
-extract_embeddings.py: Code we used to extract TRILL19, TRILLsson5, and COLA embeddings. To extract low-level features, 
+extract_embeddings.py: Script that extracts TRILL19, TRILLsson5, and COLA embeddings. To extract low-level features, 
 we used the MidLevel Prosodic Features Toolkit (https://github.com/nigelgward/midlevel) 
 
-train_models.py: Code we used to train and evaluate all linear and recurrent models
+train_models.py: Code we used to train and evaluate all linear and recurrent models presented in the paper

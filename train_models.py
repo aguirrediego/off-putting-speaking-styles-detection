@@ -81,7 +81,6 @@ def create_avg_rep(dict_rep):
 
     for i, filename in enumerate(dict_rep):
         example = dict_rep[filename]
-
         avg_rep = example
 
         # Compute mean when embeddings are stored as [segments, embeddings]
